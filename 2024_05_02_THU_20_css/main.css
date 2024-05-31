@@ -1,0 +1,68 @@
+main {
+  padding: 0 20px 30px 20px;
+}
+
+.item_list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #acacac;
+  padding: 20px 0 20px 0;
+}
+
+.item_list__img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /*rgba 태그 : rgb의 색상과 불투명도를 한 번에 주는 태그*/
+  border-radius: 12px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_list__img img {
+  width: 50px;
+}
+
+.litem_list__info {
+  padding-top: 10px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.litem_list__info div {
+  margin-top: 10px;
+}
+
+.item_list__info_meta {
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.item_list__info_price {
+  font-weight: bold;
+}
+
+.write-btn {
+  position: fixed;
+  bottom: 120px;
+  right: 30px;
+  background-color: var(--button-primary);
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 20px 15px 20px;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
+}

@@ -1,0 +1,45 @@
+/*여러개의 CSS 파일을 한 번에 뭉치는 방법*/
+
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+@import "main.css";
+
+:root {
+  --button-primary: rgb(254, 111, 15);
+  --button-hover: rgba(254, 111, 15, 0.8);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  /*font family 태그 : 폰트를 변경할 수 있는 태그*/
+}
+
+.media-info_msg {
+  position: fixed;
+  /*
+  'position - absolute'를 쓸 경우, 스크롤을 해도 가려진 원래 컨텐츠가 보임. 'position - fixed'를 쓰면 스크롤을 해도 일정하게 컨텐츠가 가려짐. 단, 요소의 사이즈를 'vw'와 'vh'로 조절해야함
+  */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .media-info_msg {
+    display: none; /*display - none : 해당 요소와 영역을 화면에서 지워주는 태그*/
+    /*
+    opacity 태그를 사용하면 요소의 특성은 그대로 유지되고 투명도만 조절이 됨. 그로 인해 요소가 투명해졌을 때, 웹페이지의 숨겨진 기능(버튼 등)들이 안눌림.
+    이럴경우 'display - none'이나 'display - hidden'을 사용함.
+    */
+  }
+}

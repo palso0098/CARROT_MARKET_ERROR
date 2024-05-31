@@ -1,0 +1,53 @@
+header {
+  margin-top: 15px;
+  border-bottom: 1px solid #acacac;
+  padding-bottom: 15px;
+}
+
+.info_bar {
+  display: flex;
+  justify-content: space-between;
+  /*
+   justify-content - space-around : 요소들의 좌/우 여백을 맞춰 배치하는 태그 (맨 양끝 쪽의 여백과 중간 부분 쪽의 여백이 다름)
+   justify-content - space-between : 요소들을 좌/우 맨 끝에 여백없이 배치하는 태그
+   justify-content - space-evenly : 요소들의 동일한 여백으로 맞춰 배치하는 태그 (맨 양끝 쪽의 여백과 중간 부분 쪽의 여백이 같음)
+ */
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+
+.info_bar__time {
+  font-size: 20px;
+}
+
+.info_bar__icons img {
+  width: 25px;
+}
+
+.menu_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0 25px 0 25px;
+}
+
+.menu_bar__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_bar__location__zone {
+  font-weight: 900; /*font-weight 태그 : 폰트에 굵기를 주는 태그*/
+  font-size: 22px;
+}
+
+.menu_bar__location__zone__icon img {
+  width: 32px;
+}
+
+.menu_bar__location__icons img {
+  width: 32px;
+  margin-left: 25px;
+}
